@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  background: url("#");
+  color: white;
+}
+html {
+  cursor: url("Kursor/img1.png"), pointer;
+  border: 6px;
+}
+#backg {
+  /*фон для главной страницы*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-image: url(Fon/Fon.jpg);
+  background-size: 100%;
+  background-size: cover;
+}
+.fon1 {
+  /*чёрный фон на все страницы*/
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.fon2 {
+  /*Зелёный фон верхушка всех страниц*/
+  background-color: #095531;
+  width: 100%;
+  height: 100%;
+}
+.kino {
+  /*Флекс контейнер*/
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.kino > div {
+  /*растояние между картинками ⇿*/
+  margin-left: 10px;
+}
+.kino div img {
+  /*растояние между картинками ⇳ и обводка*/
+  border: 1px solid white;
+  margin-top: 30%;
+  height: 403px;
+  width: 303px;
+}
+.kino div p {
+  /*регулирование шрифта под картинками*/
+  margin-top: 3%;
+  font-size: 100%;
+}
+.film {
+  /*Флекс контейнер*/
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.film > div {
+  /*растояние между картинками ⇿*/
+  margin-left: 10px;
+}
+.film div img {
+  /*растояние между картинками ⇳ и обводка*/
+  border: 1px solid white;
+  margin-top: 30%;
+  height: 170px;
+  width: 303px;
+}
+.film div p {
+  /*регулирование шрифта под картинками*/
+  margin-top: 3%;
+  font-size: 100%;
+}
+.muz {
+  /*Флекс контейнер*/
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.muz > div {
+  /*растояние между картинками ⇿*/
+  margin-left: 10px;
+}
+.muz div audio {
+  /*растояние между картинками ⇳ и обводка*/
+  height: 403px;
+  width: 303px;
+}
+.muz div p {
+  /*регулирование шрифта под картинками*/
+  margin-top: 3%;
+  font-size: 100%;
+}
+.kino1 {
+  /*Флекс контейнер*/
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.kino1 > div {
+  /*растояние между картинками ⇿*/
+  margin-left: 10px;
+}
+.kino1 div img {
+  /*растояние между картинками ⇳ и обводка*/
+  border: 1px solid white;
+  margin-top: 30%;
+  height: 170px;
+  width: 303px;
+}
+.kino1 div p {
+  /*регулирование шрифта под картинками*/
+  margin-top: 3%;
+  font-size: 100%;
+}
+.Podkategorii {
+  /*подгатегории*/
+  font-size: 100%;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+}
+.Podkategorii_film > h2 {
+  /*подгатегории*/
+  margin-left: 2%;
+}
+.container_1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 5%;
+}
+.container_1 > p {
+  width: 100%;
+}
+.footer {
+  /*регулирование футера*/
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 140%;
+  color: white;
+  background-color: #095531;
+}
+.sots_seti {
+  /*регулировани соц-сетей на футере*/
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.glavna {
+  /*Регулировка строчек подготерий с рейтингом 18+*/
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+.glav {
+  /*Возростной рейтинг для главной страницы*/
+  background-color: #530309;
+  border-radius: 35%;
+  margin-left: 5px;
+}
+.max img {
+  /*Регулировка при увиличении*/
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 2% auto;
+}
+.max img:hover {
+  /*Увелечение картинок при наводке на них*/
+  z-index: 5;
+  -webkit-transform: scale(11);
+  transform: scale(1.1);
+  border: 2px solid white;
+}
+.ui {
+  /*Выстовляет по середине подкотегории:Мультфильмы,Аниме,Сайты*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+.menu li {
+  margin-right: 100px;
+  display: inline-block;
+  vertical-align: middle;
+} /*Управление основным меню*/
+.menu a {
+  vertical-align: middle;
+  font-family: arial;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+} /*Управление основным меню*/
+.menu a:hover {
+  color: #00ff38;
+} /*Управление под меню мультиков меню*/
+.menu {
+  margin-top: 2%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#km {
+  border-bottom: 5px solid #00ff38;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.logo_kartinka {
+  /*Картинка джойстика на логотипе*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: -3%;
+}
+.vse {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 30%;
+}
+@media (max-width: 700px) {
+  .kino {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 1s;
+  margin-top: -3%;
+}
+.prev {
+  border-radius: 3px 0px 0px 3px;
+  margin-left: -30%;
+  margin-top: -20%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0px 3px 3px 0px;
+  margin-top: -20%;
+  margin-right: 20%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffa07a;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.fade img {
+  margin-top: 2%;
+  width: 50%;
+  height: 70%;
+  margin-left: 0%;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+.K-S {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.dop {
+  width: 20%;
+  margin-top: 4%;
+}
+.dop a img {
+  width: 20%;
+  height: 20%;
+  margin-right: 7%;
+}
+.men1 li {
+  margin-right: 100px;
+  display: inline-block;
+  vertical-align: middle;
+} /*Управление основным меню*/
+.men1 a {
+  vertical-align: middle;
+  font-family: arial;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+} /*Управление основным меню*/
+.men1 a:hover {
+  color: #00ff38;
+} /*Управление под меню мультиков меню*/
+.men1 {
+  margin-top: 4%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.men1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+html{
+scroll-behavior: smooth;
+}
+.grin{/*Оценка фильма фильмов*/
+	border: 1px solid white;
+	border-radius: 30%;
+	background-color: #00FF38;
+  width: 30px;
+  height: 0px;
+}
+.red{/*возростной рейтинг фильмов*/
+	border: 1px solid white;
+	border-radius: 30%;
+	background-color: #00FF38;
+
+}
+.grin{/*Оценка фильма фильмов*/
+	border: 1px solid white;
+	border-radius: 30%;
+	background-color: #095531;
+  width: 12%;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.red{/*возростной рейтинг фильмов*/
+	border: 1px solid white;
+	border-radius: 30%;
+	background-color: #530309;
+  margin-left: 3px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.letter{
+  color: #00FF38;
+}
+.video-flex{
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+}
+.video-flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.olo{
+  width: 50%;
+  height: 20%;
+  background-color: gray;
+  border-radius: 50px;
+}
+.olo ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.olo ul li{
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.olo ul li p{
+  text-decoration: none;
+  margin-left: -160px;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.olo ul li img{
+  width: 20%;
+  cursor: pointer;
+  height: 30%;
+  margin: 1%;
+}
+  .fof{
+    font-size: 50px;
+	  display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.logo_kartinka img{
+  height: 200px;
+  width: 400px;  
+  }
+@media (max-width: 1800px){
+  .fof{
+    font-size: 29px;
+  }
+}
+@media (max-width: 1600px){
+  .fof{
+    font-size: 27px;
+  }
+}
+@media (max-width: 1300px){
+  .fof{
+    font-size: 25px;
+  }
+}
+@media (max-width: 1100px){
+  .fof{
+    font-size: 25px;
+  }
+}
+@media (max-width: 1100px){
+  .fof{
+    font-size: 25px;
+  }
+}
+@media (max-width: 960px){
+  .fof{
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px){
+  .fof{
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px){
+  .fof{
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px){
+  .menu a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px){
+  #km {
+    font-size: 10px;
+  }
+}
+@media (max-width: 960px){
+  .logo_kartinka img{
+    height: 180px;
+    width: 380px;  
+    }
+}
+@media (max-width: 800px){
+  .logo_kartinka img{
+    height: 150px;
+    width: 340px;  
+    }
+}
+@media (max-width: 600px){
+  .logo_kartinka img{
+    height: 100px;
+    width: 250px;  
+    }
+}
+@media (max-width: 600px){
+  .men1 a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px){
+  .olo p{
+    display:none;
+  }
+}
+@media (max-width: 1300px){
+  .olo p{
+    display:none;  }
+}
+@media (max-width: 700px) {
+  .film {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .muz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}  
+@media (max-width: 960px) {
+  .ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    font-size: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .menu li {
+    margin-right: 200px;
+    margin-left: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .menu{
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1800px) {
+  .olo ul li p{
+    font-size: 15px;
+  }
+}
+@media (max-width: 1500px) {
+  .olo ul li p{
+    font-size: 10px;
+  }
+}
